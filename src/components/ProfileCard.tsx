@@ -64,6 +64,16 @@ export default function ProfileCard() {
           </h3>
           <p style={{ marginTop: '1rem' }}>{strings.aboutMeBody}</p>
           <p style={{ marginTop: '1rem' }}>{strings.aboutMeBody2}</p>
+          <p style={{ marginTop: '1rem' }}>
+            {strings.accessResume}{' '}
+            <Link
+              style={{ color: '#517ff4' }}
+              target="_blank"
+              href="/gabriel_silva_.pdf"
+            >
+              {strings.here}.
+            </Link>
+          </p>
         </div>
       </div>
       <div

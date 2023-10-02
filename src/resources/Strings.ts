@@ -61,6 +61,8 @@ export default class Strings {
       email: 'Email',
       otherContact: 'Outro contato',
       message: 'Mensagem',
+      accessResume: 'Acesse meu currículo',
+      here: 'aqui',
     },
     en: {
       lang: 'en',
@@ -121,6 +123,8 @@ export default class Strings {
       email: 'Email',
       otherContact: 'Other contact',
       message: 'Message',
+      accessResume: 'Access my resume',
+      here: 'here',
     },
   };
 
