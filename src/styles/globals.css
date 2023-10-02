@@ -1,0 +1,129 @@
+:root {
+  --border-radius: 8px;
+  --font: 'Poppins', sans-serif;
+  --text-color: #ababab;
+  --title-color: #f5f5f5;
+  --bg: #06060c;
+  --variant: #1f1f36;
+  --text-variant: #8277b1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  color: var(--text-color);
+  user-select: none;
+}
+
+body {
+  font-size: 16px;
+  background: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.form label,
+.form input,
+.form .textarea {
+  width: 100%;
+  display: block;
+}
+
+.form input,
+.form .textarea {
+  background: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--variant);
+}
+
+.form input:focus,
+.form .textarea:focus {
+  outline: 2px solid var(--text-variant);
+}
+
+.hover-b {
+  font-size: inherit;
+}
+
+.hover-b:hover {
+  filter: brightness(2);
+}
+
+.c-card {
+  background: var(--bg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--variant);
+  box-shadow: 0 0 5px var(--variant);
+  width: 90vw;
+  max-width: 700px;
+  padding: 1rem;
+  overflow: auto;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+
+.c-card * {
+  user-select: text;
+}
+
+.container-on {
+  animation: anim-on 0.4s;
+}
+
+.container-off {
+  animation: anim-off 0.4s;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--border-radius);
+  background: var(--variant);
+}
+
+@media (min-height: 1000px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media (min-height: 2000px) {
+  body {
+    font-size: 32px;
+  }
+}
+
+@keyframes anim-on {
+  to {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes anim-off {
+  to {
+    background: transparent;
+  }
+}
