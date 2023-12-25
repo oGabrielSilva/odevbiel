@@ -69,7 +69,7 @@ export default function ProfileCard() {
             <Link
               style={{ color: '#517ff4' }}
               target="_blank"
-              href="/gabriel_silva_.pdf"
+              href="/resume.pdf"
             >
               {strings.here}.
             </Link>
